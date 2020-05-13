@@ -96,7 +96,7 @@ export CLANG_TRIPLE=aarch64-linux-gnu-
 export REAL_CC=$PWD/Clang/bin/clang
 
 # Cross Compiler Setup
-export CROSS_COMPILE="$PWD/Toolchain/bin/aarch64-linux-gnu-"
+export CROSS_COMPILE="$PWD/Toolchain/bin/aarch64-linux-android-"
 # export CROSS_COMPILE_ARM32="$PWD/Toolchain-32/bin/arm-opt-linux-androideabi-"
 
 # Customize Build Host and User
@@ -132,7 +132,7 @@ ln -s /usr/bin/python2 /usr/bin/python
 		"Under commit <b>$(git log --pretty=format:'%h' -1)</b>"
 
 # Clone Toolchain
-git clone https://github.com/ryan-andri/aarch64-linaro-linux-gnu-4.9 --depth=1 Toolchain
+git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 --depth=1 Toolchain
 # git clone https://github.com/krasCGQ/arm-linux-androideabi -b opt-gnu-8.x --depth=1 Toolchain-32
 
 # Clone Clang
