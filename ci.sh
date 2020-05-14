@@ -94,6 +94,7 @@ export SUBARCH=arm64
 # Clang Setup
 export CLANG_TRIPLE=aarch64-linux-gnu-
 export REAL_CC=$PWD/Clang/bin/clang
+export DTC_EXT=dtc
 
 # Cross Compiler Setup
 export CROSS_COMPILE="$PWD/Toolchain/bin/aarch64-linux-android-"
@@ -136,7 +137,7 @@ git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_a
 # git clone https://github.com/krasCGQ/arm-linux-androideabi -b opt-gnu-8.x --depth=1 Toolchain-32
 
 # Clone Clang
-git clone https://github.com/kdrag0n/proton-clang --depth=1 Clang
+git clone https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6443078 --depth=1 Clang
 
 # Customize Compiler Name
 # export KBUILD_COMPILER_STRING=$($CC --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
